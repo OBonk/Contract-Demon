@@ -1,3 +1,100 @@
+const ETHSTR = await ethers.getContractFactory("Victim")
+.exit
+exit
+await ethstr.getBalance()
+ethstr.getBalance()
+const ethstr = await ethStore.attach("0x5FbDB2315678afecb367f032d93F642f64180aa3")
+const ethstore = await ethstore.attach("0x5FbDB2315678afecb367f032d93F642f64180aa3")
+ethStore = await ethers.getContractFactory("Victim")
+.exit
+const bob = await ethers.getSigner();
+delete alice
+const [alice] = await ethers.getSigners();
+.exit
+await own.address
+own.address
+const own = ethers.getSigner()
+const [owner] = ethers.getSigners()
+const [owner] = ethers.getSigner()
+.exit
+owner.address
+await owner.getTransactionCount()
+bal = await ethstore.getBalance()
+bal = ethstore.getBalance()
+ethstore.balances(owner.address)
+owner.checkTransaction(thash)
+thash
+thash = owner.sendTransaction({to:"0x5FbDB2315678afecb367f032d93F642f64180aa3",value:1})
+bal = await ethstore.balances(owner.address)
+bal = await ethstore.balances()
+bal = await ethstore.balances
+bal = await ethstore.getBalance()
+bal = await owner.getBalance()
+owner.getBalance()
+await ethstore.deposit{value:1}()
+await thstore.deposit{value:1}()
+ethstore.deposit{value:1}()
+ethstore.depost{value:1}()
+owner
+await owner.send(ethstore.address,1)
+);
+console.log(ethstore.balances[owner.address]
+ethstore.balances[owner.address]
+ethstore.getBalance()
+ethstore.getBalance
+const ethstore = Etherstore.attach("0x5FbDB2315678afecb367f032d93F642f64180aa3")
+Etherstore = await ethers.getContractFactory("Victim")
+});
+value: ethers.utils.parseEther("1.0"),
+to:"0x5FbDB2315678afecb367f032d93F642f64180aa3",
+const transactionHash2 = await owner.sendTransaction({
+});
+value: ethers.utils.parseEther("1.0"),
+to:"0x5FbDB2315678afecb367f032d93F642f64180aa3",
+const transactionHash = await owner.sendTransaction({
+const transactionHash = await owner.sendTransaction({                                                                ... to:"0x5FbDB2315678afecb367f032d93F642f64180aa3",                                                                    ... value: ethers.utils.parseEther("1.0"),                                                                        }); 
+const transactionHash = await owner.sendTransaction({                                                                ... to:"0x5FbDB2315678afecb367f032d93F642f64180aa3",                                                                    ... value: ethers.utils.parseEther("1.0"),                                                                              ... }); 
+});
+value: ethers.utils.parseEther("1.0"),
+to:"0x5FbDB2315678afecb367f032d93F642f64180aa3",
+const transactionHash = await owener.sendTransaction({
+value: ethers.utils.parseEther("1.0"), // Sends exactly 1.0 ether
+to:"0x5FbDB2315678afecb367f032d93F642f64180aa3"
+const transactionHash = await owener.sendTransaction({
+const [owner] = await ethers.getSigners();
+exit()
+exit
+const [owner] = await ethers.getSigners();
+});
+  value: ethers.utils.parseEther("1.0"), // Sends exactly 1.0 ether
+  to: "contract address",
+const transactionHash = await owner.sendTransaction({
+const owner = await ethers.getSigners();
+ethers
+store.send(1)
+store.transfer(1)
+store.deposit() 1
+store.deposit()
+store.deposit(1)
+const store = await etherStore.attach('0x5FbDB2315678afecb367f032d93F642f64180aa3')
+const etherStore = await ethers.getContractFactory("Victim")
+etherStore = Victim(0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512)
+hardhat
+const hardhat = require("hardhat");
+hardhat 
+hardhatArguments
+.hardhat
+.exit
+exit
+set NODE_OPTIONS=--openssl-legacy-provider
+hardhat.network
+hardhat.
+.hardhat
+..
+hardhat
+const hardhat = require("hardhat")
+)
+console.log(await web3.eth.getBalance()
 .exit
 await box.retrieve()
 await box.store(22)

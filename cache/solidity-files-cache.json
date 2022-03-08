@@ -35,6 +35,110 @@
       "artifacts": [
         "Box"
       ]
+    },
+    "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\Reentrancy.sol": {
+      "lastModificationDate": 1646741704497,
+      "contentHash": "dc758196693a231fee8bc32a88f3d491",
+      "sourceName": "contracts/Reentrancy.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": [
+        "Attacker",
+        "Victim"
+      ]
+    },
+    "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\Underflow.sol": {
+      "lastModificationDate": 1646744013400,
+      "contentHash": "fc5b5d66ae9c2f98f14343fb5cb36a76",
+      "sourceName": "contracts/Underflow.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [],
+      "artifacts": [
+        "VulnerableToken"
+      ]
+    },
+    "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\node_modules\\hardhat\\console.sol": {
+      "lastModificationDate": 1645192688457,
+      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
     }
   }
 }
