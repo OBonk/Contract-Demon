@@ -14,7 +14,7 @@ async function main(){
     ebal = await vtoken.tokenBalanceOf(Eve.address);
     console.log("Eve's balance is: ",ebal)
     console.log("Attemping to transfer 50 coins from Eve to Owner");
-    await vtoken.connect(Eve).transfer(owner.address,50).catch(Error => {console.log("Successful Underflow Error");});
+    await vtoken.connect(Eve).transfer(owner.address,50).catch(Error => {console.log(Error);console.log("Successful Underflow Error");});
 }
 main()
 .then(() => process.exit(0))
