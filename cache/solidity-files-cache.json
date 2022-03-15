@@ -139,6 +139,110 @@
       "artifacts": [
         "console"
       ]
+    },
+    "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\Frontrunning.sol": {
+      "lastModificationDate": 1647295772540,
+      "contentHash": "31f0d6393107a79478e310523fe99c89",
+      "sourceName": "contracts/Frontrunning.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "FindThisHash"
+      ]
+    },
+    "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\delegatecall.sol": {
+      "lastModificationDate": 1647301498946,
+      "contentHash": "8bf0002611513fba4084fc8b125c1a71",
+      "sourceName": "contracts/delegatecall.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "FibonacciBalance",
+        "fibAttack"
+      ]
+    },
+    "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\fibonacciLibrary.sol": {
+      "lastModificationDate": 1647299888740,
+      "contentHash": "84f8a7026c1d1838e7601235ca42e27c",
+      "sourceName": "contracts/fibonacciLibrary.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": [
+        "FibonacciLib"
+      ]
     }
   }
 }
