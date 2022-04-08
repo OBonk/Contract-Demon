@@ -1,8 +1,8 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\box.sol": {
-      "lastModificationDate": 1645192896398,
+    "C:\\Users\\Ollib\\Documents\\work\\Contract-Killer and dev area\\Dev-area\\contracts\\box.sol": {
+      "lastModificationDate": 1646395729602,
       "contentHash": "8ceb935b7a14673d26665f64185cfe27",
       "sourceName": "contracts/box.sol",
       "solcConfig": {
@@ -36,44 +36,10 @@
         "Box"
       ]
     },
-    "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\Reentrancy.sol": {
-      "lastModificationDate": 1646741704497,
-      "contentHash": "dc758196693a231fee8bc32a88f3d491",
-      "sourceName": "contracts/Reentrancy.sol",
-      "solcConfig": {
-        "version": "0.8.4",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [],
-      "artifacts": [
-        "Attacker",
-        "Victim"
-      ]
-    },
-    "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\Underflow.sol": {
-      "lastModificationDate": 1646744013400,
-      "contentHash": "fc5b5d66ae9c2f98f14343fb5cb36a76",
-      "sourceName": "contracts/Underflow.sol",
+    "C:\\Users\\Ollib\\Documents\\work\\Contract-Killer and dev area\\Dev-area\\contracts\\delegatecall.sol": {
+      "lastModificationDate": 1649427764154,
+      "contentHash": "d61793d47339b336d24d8e708a39eab3",
+      "sourceName": "contracts/delegatecall.sol",
       "solcConfig": {
         "version": "0.8.4",
         "settings": {
@@ -100,48 +66,17 @@
       "imports": [
         "hardhat/console.sol"
       ],
-      "versionPragmas": [],
-      "artifacts": [
-        "VulnerableToken"
-      ]
-    },
-    "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\node_modules\\hardhat\\console.sol": {
-      "lastModificationDate": 1645192688457,
-      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
-      "sourceName": "hardhat/console.sol",
-      "solcConfig": {
-        "version": "0.8.4",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
       "versionPragmas": [
-        ">=0.4.22 <0.9.0"
+        "^0.8.4"
       ],
       "artifacts": [
-        "console"
+        "DelAttack",
+        "HackMe",
+        "Lib"
       ]
     },
-    "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\Frontrunning.sol": {
-      "lastModificationDate": 1647295772540,
+    "C:\\Users\\Ollib\\Documents\\work\\Contract-Killer and dev area\\Dev-area\\contracts\\Frontrunning.sol": {
+      "lastModificationDate": 1648546073909,
       "contentHash": "31f0d6393107a79478e310523fe99c89",
       "sourceName": "contracts/Frontrunning.sol",
       "solcConfig": {
@@ -175,46 +110,10 @@
         "FindThisHash"
       ]
     },
-    "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\delegatecall.sol": {
-      "lastModificationDate": 1647301498946,
-      "contentHash": "8bf0002611513fba4084fc8b125c1a71",
-      "sourceName": "contracts/delegatecall.sol",
-      "solcConfig": {
-        "version": "0.8.4",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.4"
-      ],
-      "artifacts": [
-        "FibonacciBalance",
-        "fibAttack"
-      ]
-    },
-    "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\fibonacciLibrary.sol": {
-      "lastModificationDate": 1647299888740,
-      "contentHash": "84f8a7026c1d1838e7601235ca42e27c",
-      "sourceName": "contracts/fibonacciLibrary.sol",
+    "C:\\Users\\Ollib\\Documents\\work\\Contract-Killer and dev area\\Dev-area\\contracts\\Reentrancy.sol": {
+      "lastModificationDate": 1648546073910,
+      "contentHash": "dc758196693a231fee8bc32a88f3d491",
+      "sourceName": "contracts/Reentrancy.sol",
       "solcConfig": {
         "version": "0.8.4",
         "settings": {
@@ -241,7 +140,78 @@
       "imports": [],
       "versionPragmas": [],
       "artifacts": [
-        "FibonacciLib"
+        "Attacker",
+        "Victim"
+      ]
+    },
+    "C:\\Users\\Ollib\\Documents\\work\\Contract-Killer and dev area\\Dev-area\\contracts\\Underflow.sol": {
+      "lastModificationDate": 1648546073912,
+      "contentHash": "fc5b5d66ae9c2f98f14343fb5cb36a76",
+      "sourceName": "contracts/Underflow.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [],
+      "artifacts": [
+        "VulnerableToken"
+      ]
+    },
+    "C:\\Users\\Ollib\\Documents\\work\\Contract-Killer and dev area\\Dev-area\\node_modules\\hardhat\\console.sol": {
+      "lastModificationDate": 1646395769726,
+      "contentHash": "1f481d21fa74d2937414fe6b27fa5a57",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
       ]
     }
   }
