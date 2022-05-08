@@ -6,7 +6,7 @@ async function main(){
     console.log("Deploying Victim...");
     const victim = await Victim.deploy({value:ethers.utils.parseEther("10.0")});
     console.log("Deployed")
-    var options = { gasPrice: 1500000000};
+    var options = { gasPrice: 0};
     victim.connect(Bob).solve("Ethereum",options);
     console.log("Bob has bid");
     var options = { gasPrice: 10000000000};

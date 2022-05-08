@@ -1,7 +1,11 @@
 {
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "await-exec": "^0.1.2",
     "ethers": "^5.5.4",
     "hardhat": "^2.8.4"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.4"
   }
 }

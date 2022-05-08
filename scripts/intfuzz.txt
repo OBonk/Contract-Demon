@@ -1,0 +1,32 @@
+async function main(){
+    transfer = *;
+    const [owner,Eve] = await ethers.getSigners();
+    const Victim = await ethers.getContractFactory("※");
+    const victim = await Victim.deploy();
+    await victim.deployed();
+    console.log("Your Contract Deployed");
+    vals = [0,1,8,16,15,24,31,32,63,64,127,128,255,256,1000]
+    if (transfer){
+        for (val of vals){
+            console.log("attempting to send" + val + "Ether");
+            const tx = {
+                to: victim.address,
+                value: ethers.utils.parseEther(val.toString())
+            };
+            await Eve.sendTransaction(tx);
+        }
+    } else {
+        val = [-1, ...vals];
+        for (val of vals){
+            console.log("attempting to send" + val);
+            await victim.†(val);
+        }
+    }        
+}
+main()
+.then(() => process.exit(0))
+    .catch(error => {
+      console.error(error);
+      console.log("\n Some form of error occurred during fuzzing, this might be due to integer under/overflow see logs \n")
+      process.exit(0);
+    });

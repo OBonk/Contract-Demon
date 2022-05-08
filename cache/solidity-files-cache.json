@@ -1,8 +1,8 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "C:\\Users\\Ollib\\Documents\\work\\Contract-Killer and dev area\\Dev-area\\contracts\\box.sol": {
-      "lastModificationDate": 1646395729602,
+    "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\box.sol": {
+      "lastModificationDate": 1645192896398,
       "contentHash": "8ceb935b7a14673d26665f64185cfe27",
       "sourceName": "contracts/box.sol",
       "solcConfig": {
@@ -36,9 +36,9 @@
         "Box"
       ]
     },
-    "C:\\Users\\Ollib\\Documents\\work\\Contract-Killer and dev area\\Dev-area\\contracts\\delegatecall.sol": {
-      "lastModificationDate": 1649427764154,
-      "contentHash": "d61793d47339b336d24d8e708a39eab3",
+    "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\delegatecall.sol": {
+      "lastModificationDate": 1651830848358,
+      "contentHash": "a7c0b94e18b4132c578175e8fbd343b6",
       "sourceName": "contracts/delegatecall.sol",
       "solcConfig": {
         "version": "0.8.4",
@@ -75,10 +75,10 @@
         "Lib"
       ]
     },
-    "C:\\Users\\Ollib\\Documents\\work\\Contract-Killer and dev area\\Dev-area\\contracts\\Frontrunning.sol": {
-      "lastModificationDate": 1648546073909,
-      "contentHash": "31f0d6393107a79478e310523fe99c89",
-      "sourceName": "contracts/Frontrunning.sol",
+    "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\node_modules\\hardhat\\console.sol": {
+      "lastModificationDate": 1645192688457,
+      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
+      "sourceName": "hardhat/console.sol",
       "solcConfig": {
         "version": "0.8.4",
         "settings": {
@@ -104,48 +104,14 @@
       },
       "imports": [],
       "versionPragmas": [
-        "^0.8.4"
+        ">=0.4.22 <0.9.0"
       ],
       "artifacts": [
-        "FindThisHash"
+        "console"
       ]
     },
-    "C:\\Users\\Ollib\\Documents\\work\\Contract-Killer and dev area\\Dev-area\\contracts\\Reentrancy.sol": {
-      "lastModificationDate": 1648546073910,
-      "contentHash": "dc758196693a231fee8bc32a88f3d491",
-      "sourceName": "contracts/Reentrancy.sol",
-      "solcConfig": {
-        "version": "0.8.4",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [],
-      "artifacts": [
-        "Attacker",
-        "Victim"
-      ]
-    },
-    "C:\\Users\\Ollib\\Documents\\work\\Contract-Killer and dev area\\Dev-area\\contracts\\Underflow.sol": {
-      "lastModificationDate": 1648546073912,
+    "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\Underflow.sol": {
+      "lastModificationDate": 1651675148898,
       "contentHash": "fc5b5d66ae9c2f98f14343fb5cb36a76",
       "sourceName": "contracts/Underflow.sol",
       "solcConfig": {
@@ -179,10 +145,10 @@
         "VulnerableToken"
       ]
     },
-    "C:\\Users\\Ollib\\Documents\\work\\Contract-Killer and dev area\\Dev-area\\node_modules\\hardhat\\console.sol": {
-      "lastModificationDate": 1646395769726,
-      "contentHash": "1f481d21fa74d2937414fe6b27fa5a57",
-      "sourceName": "hardhat/console.sol",
+    "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\Frontrunning.sol": {
+      "lastModificationDate": 1651582181715,
+      "contentHash": "42a82a7eea330e970fc0cdfb8b26309c",
+      "sourceName": "contracts/Frontrunning.sol",
       "solcConfig": {
         "version": "0.8.4",
         "settings": {
@@ -208,10 +174,184 @@
       },
       "imports": [],
       "versionPragmas": [
-        ">=0.4.22 <0.9.0"
+        "^0.8.4"
       ],
       "artifacts": [
-        "console"
+        "FindThisHash"
+      ]
+    },
+    "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\Reentrancy.sol": {
+      "lastModificationDate": 1651659680344,
+      "contentHash": "9804e297d99832a0f5ef93a1cec5645a",
+      "sourceName": "contracts/Reentrancy.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": [
+        "Attacker",
+        "Victim"
+      ]
+    },
+    "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\selfdestruct.sol": {
+      "lastModificationDate": 1651659632732,
+      "contentHash": "767f47a0dbe47b7627604cf4e93cc1cc",
+      "sourceName": "contracts/selfdestruct.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Attack",
+        "EtherGame"
+      ]
+    },
+    "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\txorigin.sol": {
+      "lastModificationDate": 1651659678843,
+      "contentHash": "b5935054074dcae391d9c611ab64c447",
+      "sourceName": "contracts/txorigin.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": [
+        "AttackContract",
+        "Phishable"
+      ]
+    },
+    "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\identifier.sol": {
+      "lastModificationDate": 1651854223397,
+      "contentHash": "d5f8bb75f55294b8c2d0294ee9794b98",
+      "sourceName": "contracts/identifier.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "vault"
+      ]
+    },
+    "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\inttest.sol": {
+      "lastModificationDate": 1652027368635,
+      "contentHash": "0c29e161fbea3348d2b00a3f8df5c9d6",
+      "sourceName": "contracts/inttest.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "intTar"
       ]
     }
   }

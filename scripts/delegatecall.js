@@ -12,12 +12,13 @@ async function main(){
     const attack = await Attack.deploy(hackme.address,Eve.address);
     console.log("Contracts Deployed");
     console.log(owner.address);
-    let cowner = await lib.owner();
-    console.log("Owner of lib is "+ cowner);
+    let cowner = await hackme.owner();
+    console.log("Owner of victim contract is "+ cowner);
     console.log("attacking...");
     await attack.connect(Eve).attack();
-    await lib.getOwner().then( (cowner)=> {
-      console.log("Owner of lib is "+ cowner);
+    console.log("Victim fallback triggered, delegating call data")
+    await hackme.getOwner().then( (cowner)=> {
+      console.log("Owner of victim contract is "+ cowner);
     });
 }
 main().then(() => process.exit(0))
