@@ -25,6 +25,9 @@ async function main () {
     Vbal = await provider.getBalance(victim.address)
     console.log("Attackers balance is now: ", Abal)
     console.log("Victim's Balance is now: ", Vbal)
+    if (Abal > Vbal) {
+      console.log("Re-entrancy successful")
+    }
   }
   
   main()

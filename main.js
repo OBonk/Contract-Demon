@@ -256,7 +256,7 @@ async function main(run){
   console.clear();
   try {  
     let data = fs.readFileSync('title.txt', 'utf8');
-    console.log(data.toString());    
+    console.log("\x1b[31m",data.toString());    
   } catch(e) {
       console.log('Error:', e.stack);
   }

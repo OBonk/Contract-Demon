@@ -145,41 +145,6 @@
         "VulnerableToken"
       ]
     },
-    "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\Frontrunning.sol": {
-      "lastModificationDate": 1651582181715,
-      "contentHash": "42a82a7eea330e970fc0cdfb8b26309c",
-      "sourceName": "contracts/Frontrunning.sol",
-      "solcConfig": {
-        "version": "0.8.4",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.4"
-      ],
-      "artifacts": [
-        "FindThisHash"
-      ]
-    },
     "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\Reentrancy.sol": {
       "lastModificationDate": 1651659680344,
       "contentHash": "9804e297d99832a0f5ef93a1cec5645a",
@@ -320,7 +285,7 @@
       ]
     },
     "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\inttest.sol": {
-      "lastModificationDate": 1652027368635,
+      "lastModificationDate": 1652106257453,
       "contentHash": "0c29e161fbea3348d2b00a3f8df5c9d6",
       "sourceName": "contracts/inttest.sol",
       "solcConfig": {

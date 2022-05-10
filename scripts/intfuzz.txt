@@ -6,6 +6,7 @@ async function main(){
     await victim.deployed();
     console.log("Your Contract Deployed");
     vals = [0,1,8,16,15,24,31,32,63,64,127,128,255,256,1000]
+    vals2 = [-1000,-256,-100,-10,-5,-1,0,1,8,16,15,24,31,32,63,64,127,128,255,256,1000,10000,1000000,10000000000]
     if (transfer){
         for (val of vals){
             console.log("attempting to send" + val + "Ether");
