@@ -1,0 +1,12 @@
+Self destruct also related to another exploit called locked ether is an exploit that
+can be used to break contract rules or lock contracts so the Ether they hold is
+essentially lost, it can be used to send an amount of Ether to a contract that
+disallows certain amounts being sent, say for the example an auctioning contract,
+if there is a max bid that has been set for some reason we can create an attacking
+contract to send over this amount by using selfdestruct(), this function destroys
+the contract and sends all Ether it holds to that address, this allows to bypass the
+limit as this transaction can no longer be reverted. Another example is if we have
+a contract that might work as game such that each user can guess a number and
+submit 1 ether, if we do this with selfdestruct and the attacking contract wins, the
+game contract is now locked as it cannot start a new game due to being unable to
+send the prize Ether to the winner, this is also a form of the locked ether exploit.

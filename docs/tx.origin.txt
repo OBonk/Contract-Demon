@@ -1,0 +1,13 @@
+tx.origin is a vulnerability which refers to the function tx.origin which allows the
+contract to determine the origin of the contract, while tx.origin isolated is safe to
+use, the context can cause vulnerability, such as using it to verify the owner of a
+contract or the address of someone trying to withdraw from an Ether store type
+contract. The exploit requires use of an attacking contract and phishing the owner
+or person of interest (POI) related to another contract into using the attacking
+contract. Once the POI sends the phishing contract Ether or engage in some
+form of transaction which they began the attacking contract can then use this
+transaction to continue to call the target contract, this target contract then uses
+tx.origin to verify who initialised the contract and due to the phishing contract
+having been initialised by the target user it verifies correctly and the phishing
+contract can execute whatever function it wanted to potentially putting Ether at
+risk.

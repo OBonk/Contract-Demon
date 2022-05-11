@@ -143,14 +143,45 @@ async function reTest(){
   await keypress()
   main(true);
 }
-
-function document(exploit){
+async function testDelegatecall(location,running) {
+  let contract = [];
   try {  
-    let data = fs.readFileSync(exploit+'.txt', 'utf8');
-    console.log(data.toString());    
+    let data = fs.readFileSync(location, 'utf8');
+    contract = data.toString().split("\n")   
   } catch(e) {
       console.log('Error:', e.stack);
   }
+  for (let i = 0; i<contract.length;i++) {
+    if (contract[i].includes("delegatecall(msg.data)")){
+      console.log("\x1b[31m","Extremely dangerous use of delegate call on line "+(i+1))
+      console.log("\x1b[37m",contract[i])
+    } else if(contract[i].includes("msg.data") && contract[i].includes("delegatecall")) {
+      console.log("\x1b[33m","Possibly dangerous use of delegate call on line"+(i+1))
+      console.log("\x1b[37m",contract[i])
+    } else if(contract[i].includes("delegatecall"))  {
+      console.log("\x1b[32m","Use of delegate call on line"+(i+1))
+      console.log("\x1b[37m",contract[i])
+    }
+    
+  }
+  console.log("\x1b[37m","\n Press enter to continue....")
+  await keypress();
+  main(running);
+}
+async function document(exploit,running){
+  if (exploit == "Integer Under/Overflow"){
+    exploit = "Underflow"
+  }
+  console.log("\x1b[32m","Documentation for "+exploit)
+  try {  
+    let data = fs.readFileSync("docs/"+exploit+'.txt', 'utf8');
+    console.log("\x1b[33m",data.toString());    
+  } catch(e) {
+      console.log('Error:', e.stack);
+  }
+  console.log("\x1b[37m","\n Press enter to continue....")
+  await keypress();
+  main(running);
 }
 function spawnNetwork(){
     const bat = spawn('start cmd.exe /K start.bat', { shell: true });
@@ -281,10 +312,15 @@ async function main(run){
               console.log("Start network!")
             }
             break;
-          case("Documentation"):
+          case("View Documentation"):
+            document(answer.exploits,running);
             break;
           case("Check for"):
-            if (running){
+            if (answer.exploits=="delegatecall") {
+              let aPath = answer.aPath;
+              let relativePath = path.relative(process.cwd(), aPath);
+              testDelegatecall(relativePath,running);
+            } else if (running){
               switch(answer.exploits){
                 case("Reentrancy"):
                   let aPath = answer.aPath;
@@ -309,9 +345,8 @@ async function main(run){
                     wait();
                   }
                   break;
-                case("delegatecall"):
-                  break;
               }
+              
             }
             break;
         }

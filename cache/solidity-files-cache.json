@@ -37,8 +37,8 @@
       ]
     },
     "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\delegatecall.sol": {
-      "lastModificationDate": 1651830848358,
-      "contentHash": "a7c0b94e18b4132c578175e8fbd343b6",
+      "lastModificationDate": 1652179712961,
+      "contentHash": "736cc64fc9d07ee0f4dd98a4dc4436da",
       "sourceName": "contracts/delegatecall.sol",
       "solcConfig": {
         "version": "0.8.4",
@@ -250,8 +250,8 @@
       ]
     },
     "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\identifier.sol": {
-      "lastModificationDate": 1651854223397,
-      "contentHash": "d5f8bb75f55294b8c2d0294ee9794b98",
+      "lastModificationDate": 1652179618955,
+      "contentHash": "45756763c7f8643e8a7dbb2d4b6d1947",
       "sourceName": "contracts/identifier.sol",
       "solcConfig": {
         "version": "0.8.4",
@@ -282,41 +282,6 @@
       ],
       "artifacts": [
         "vault"
-      ]
-    },
-    "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\inttest.sol": {
-      "lastModificationDate": 1652106257453,
-      "contentHash": "0c29e161fbea3348d2b00a3f8df5c9d6",
-      "sourceName": "contracts/inttest.sol",
-      "solcConfig": {
-        "version": "0.8.4",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.4"
-      ],
-      "artifacts": [
-        "intTar"
       ]
     }
   }
