@@ -10,3 +10,17 @@ a contract that might work as game such that each user can guess a number and
 submit 1 ether, if we do this with selfdestruct and the attacking contract wins, the
 game contract is now locked as it cannot start a new game due to being unable to
 send the prize Ether to the winner, this is also a form of the locked ether exploit.
+
+The error in our contract is here:
+function play() public payable {
+        require(msg.value == 1 ether, "You can only send 1 Ether");
+
+        uint balance = address(this).balance;
+        require(balance <= targetAmount, "Game is over");
+
+        if (balance == targetAmount) {
+            winner = msg.sender;
+        }
+    }
+even though we are limiing the input to 1 ether, we use this.balance to keep a counter of what's been sent.
+Instead we should use a seperate variable that we only increment by 1.

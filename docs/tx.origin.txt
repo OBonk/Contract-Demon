@@ -11,3 +11,10 @@ tx.origin to verify who initialised the contract and due to the phishing contrac
 having been initialised by the target user it verifies correctly and the phishing
 contract can execute whatever function it wanted to potentially putting Ether at
 risk.
+
+The error in our vulnerable contract is here:
+function withdrawAll(address payable _recipient) public {
+        require(tx.origin == owner);
+        _recipient.transfer(address(this).balance); 
+    }
+we verify the owner using tx.origin, tx.origin should not be used for verification of message sending.
