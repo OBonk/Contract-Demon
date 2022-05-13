@@ -1,3 +1,13 @@
-The CALL and DELEGATECALL opcodes are useful in allowing Ethereum developers to modularise their code. Standard external message calls to contracts are handled by the CALL opcode whereby code is run in the context of the external contract/function. The DELEGATECALL opcode is identical to the standard message call, except that the code executed at the targeted address is run in the context of the calling contract along with the fact that msg.sender and msg.value remain unchanged. This feature enables the implementation of libraries whereby developers can create reusable code for future contracts.
+While Solidity does warn you that the function call which allows contracts to call
+upon each other is deprecated and should be avoided, it does not give this warning
+for Delegatecall. This is a function, which allows contracts to hand requests off to
+a library contract keeping the same msg data for the next contract and allowing
+the library contract to execute a function on behalf of the main contract. This can
+lead to unexpected code execution though contracts not checking the data that
+passes through Delegatecall.
 
-Although the differences between these two opcodes are simple and intuitive, the use of DELEGATECALL can lead to unexpected code execution.
+The error in our vulnerable contract lies here:
+fallback() external payable {
+        (bool sent, ) = payable(address(lib)).delegatecall(msg.data);
+    }
+We allow the user to pass any data to delegatecall which is dangerous.

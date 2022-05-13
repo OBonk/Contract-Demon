@@ -1,1 +1,13 @@
-When coding in most languages involving object oriented some form of access control on variables, functions, methods and attributes is usually required, the same applies to smart contracts. In smart contracts attributes will always defualt to private. However functions will default to public meaning that functions used for internal operations like sending Ether or switching the owner of the contract become accessible to other contracts and users. This is a very simple exploit and is an easy error to make as well, usually however most IDE's will warn you of this.
+When coding in most languages involving object oriented some form of access con-
+trol on variables, functions, methods and attributes is usually required, the same
+applies to smart contracts. In smart contracts attributes will always default to
+private. However functions will default to public, meaning that functions used
+for internal operations like sending Ether or switching the owner of the contract
+become accessible to other contracts and users. This is a very simple exploit and
+is an easy error to make, although most IDE’s will warn you of this.
+
+The error in our vulnerable contract lies here:
+ function sendstored() {
+        payable(address(msg.sender)).transfer(address(this).balance);
+    }
+as you can see there is no access identifier.

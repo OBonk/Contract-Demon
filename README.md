@@ -8,7 +8,7 @@ Once downloaded and unzipped start by running npm install
 
 then too run simply navigate to the directory of the tool and type
 
-node main.js
+node contractdemon.js
 
 You'll then be presented with the main menu
 

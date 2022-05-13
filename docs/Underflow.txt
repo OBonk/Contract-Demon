@@ -1,1 +1,9 @@
-The Ethereum Virtual Machine (EVM) specifies fixed-size data types for integers. This means that an integer variable, only has a certain range of numbers it can represent. A uint8 for example, can only store numbers in the range [0,255]. Trying to store 256 into a uint8 will result in 0. If care is not taken, variables in Solidity can be exploited if user input is unchecked and calculations are performed which result in numbers that lie outside the range of the data type that stores them.
+The Ethereum virtual machine has a set maximum size for certain data types. For
+example a unit8 will only store 0-255 so storing 256 in a unit8 would result in 0
+and vice versa, -1 will result in 255. This can cause unexpected and potentially
+dangerous behaviour such as if someone attempted to withdraw more Ether than
+existed in their balance in an Etherstore this could result in underflow and therefore
+their balance would loop round to being much higher than it should be.
+
+The error is not in a specific location in the vulnerable contract, instead OppenZepplin has a 
+safemath library which should be used when performing arithmatic.

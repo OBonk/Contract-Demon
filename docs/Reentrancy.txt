@@ -1,1 +1,29 @@
-One of the features of Ethereum smart contracts is the ability to call and utilise code of other external contracts. Contracts also typically handle ether, and as such often send ether to various external user addresses. The operation of calling external contracts, or sending ether to an address, requires the contract to submit an external call. These external calls can be hijacked by attackers whereby they force the contract to execute further code (i.e. through a fallback function) , including calls back into itself. Thus the code execution “re-enters” the contract.
+A stand out feature of smart contracts is the fact they can interact with one
+another by calling their functions and transferring Ether. This allows for complex
+systems that utilise multiple contracts performing different tasks. However it can
+mean that a user with malicious intent can also create its own contracts with the
+intended purpose of exploiting another. This is the case in the Re-entrancy exploit.
+As an example we have our main contract, for ease I will call this Alice’s contract,
+that performs a function such as providing a service or taking payment. We then
+could have an attacking contract, I will call this Eve’s contract, Eve’s contract is
+designed with the purpose of attacking Alice’s contract by triggering a function
+which prompts Alice’s contract to try to send Ether to Eve’s contract. However,
+due to Eve’s contract having no payable function, Eve’s contract’s fallback function
+is triggered. This contains code to re-trigger Alice’s contract’s function which
+is sending Eve’s contract Ethereum. Eve’s contract continues to re-enter this
+function to steal from the contract until Alice’s contract is drained of Ether.
+
+The error in our vulnerable contract lies here:
+function withdraw() public {
+        // Verifies user balance
+        uint bal = balances[msg.sender];
+        require(bal > 0);
+
+        // Withdraws the user's balance
+        (bool sent, ) = msg.sender.call{value: bal}("");
+        require(sent, "Failed to send Ether");
+        
+        // Sets the user's balamce to 0 once transaction is verified
+        balances[msg.sender] = 0;
+    }
+We dont reduce the balance until after attempting to send the funds.
