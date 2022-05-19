@@ -17,9 +17,8 @@ async function main(){
     console.log("attacking...");
     await attack.connect(Eve).attack();
     console.log("Victim fallback triggered, delegating call data")
-    await hackme.getOwner().then( (cowner)=> {
-      console.log("Owner of victim contract is "+ cowner);
-    });
+    cowner = await hackme.owner();
+    console.log("Owner of victim contract is "+ cowner);
 }
 main().then(() => process.exit(0))
 .catch(error => {

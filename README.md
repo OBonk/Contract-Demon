@@ -12,5 +12,5 @@ node contractdemon.js
 
 You'll then be presented with the main menu
 
-In order to carry out demonstration or check for Reentrancy/Overflow you must first start the hardhat network.
+In order to carry out any demonstration or check for Reentrancy/Overflow you must first start the hardhat network.
 

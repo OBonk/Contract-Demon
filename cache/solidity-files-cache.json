@@ -37,8 +37,8 @@
       ]
     },
     "C:\\Users\\user\\Documents\\Dissertation\\Dev-area\\contracts\\delegatecall.sol": {
-      "lastModificationDate": 1652179712961,
-      "contentHash": "736cc64fc9d07ee0f4dd98a4dc4436da",
+      "lastModificationDate": 1652954380679,
+      "contentHash": "7af0d074621901e717a8c94cb9438891",
       "sourceName": "contracts/delegatecall.sol",
       "solcConfig": {
         "version": "0.8.4",
